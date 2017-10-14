@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Title</title>
     <style>
-        .map {
-            width: 800px;
-            height: 600px;
-            background: #ccc;
-            position: relative;
-            overflow: hidden;
+        #canvas {
+            border: 1px solid #000;
         }
     </style>
 </head>
 <body>
-<div class="map" id="map"></div>
-<script src="./index.js"></script>
+<canvas width="800" height="600" id="canvas"></canvas>
 <script>
-    var map = document.getElementById('map');
-
-    var game = new Game(map);
-    game.start();
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
 
 </script>
+<script src="index.js"></script>
 </body>
 </html>
