@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background: #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="map" id="map"></div>
+<script src="./index.js"></script>
+<script>
+    var map = document.getElementById('map');
+
+    var game = new Game(map);
+    game.start();
+
+</script>
+</body>
+</html>
